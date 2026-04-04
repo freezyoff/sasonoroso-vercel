@@ -1,0 +1,37 @@
+{
+  "name": "sasonoroso-vercel",
+  "version": "1.0.0",
+  "description": "sasonoroso webserver",
+  "keywords": [
+    "sasonoroso",
+    "vercel",
+    "git"
+  ],
+  "homepage": "https://github.com/freezyoff/sasonoroso-vercel#readme",
+  "bugs": {
+    "url": "https://github.com/freezyoff/sasonoroso-vercel/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freezyoff/sasonoroso-vercel.git"
+  },
+  "license": "ISC",
+  "author": "freezyoff",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "SET NODE_ENV=development && nodemon --exec ts-node --esm src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.2",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
