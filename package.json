@@ -20,7 +20,7 @@
   "type": "module",
   "main": "src/index.ts",
   "scripts": {
-    "build": "npx tsc",
+    "build": "tsc",
     "dev": "SET NODE_ENV=development && nodemon --exec ts-node --esm src/index.ts"
   },
   "dependencies": {
