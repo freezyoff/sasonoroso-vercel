@@ -18,11 +18,10 @@
   "license": "ISC",
   "author": "freezyoff",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
     "build": "npx tsc",
-    "dev": "SET NODE_ENV=development && nodemon --exec ts-node --esm src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "SET NODE_ENV=development && nodemon --exec ts-node --esm src/index.ts"
   },
   "dependencies": {
     "express": "^5.2.1"
