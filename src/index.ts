@@ -1,14 +1,11 @@
-import express, {type Request, type Response} from 'express';
-
+// Use "type: module" in package.json to use ES modules
+import express from 'express';
 const app = express();
-const PORT: number = 3000;
-
-app.get('/', (req: Request, res: Response) => {
-  res.send('TypeScript with Express');
+ 
+// Define your routes
+app.get('/', (req, res) => {
+  res.json({ message: 'Hello from Express on Vercel!' });
 });
-
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
-
-export default app
+ 
+// Export the Express app
+export default app;
