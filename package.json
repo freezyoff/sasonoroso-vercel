@@ -21,6 +21,7 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
+    "start": "SET NODE_ENV=development && node ./dist/index.js",
     "dev": "SET NODE_ENV=development && nodemon --exec ts-node --esm src/index.ts"
   },
   "dependencies": {
